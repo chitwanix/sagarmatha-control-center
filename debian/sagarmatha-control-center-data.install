@@ -1,0 +1,7 @@
+etc/xdg/menus
+usr/share/sagarmatha-control-center
+usr/share/desktop-directories
+usr/share/icons
+usr/share/polkit-1
+debian/source_sagarmatha-control-center.py /usr/share/apport/package-hooks
+

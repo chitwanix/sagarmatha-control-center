@@ -1,0 +1,11 @@
+[Desktop Entry]
+_Name=Sagarmatha Control Center
+Icon=preferences-system
+Exec=sagarmatha-control-center --overview
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;System;
+OnlyShowIn=X-Sagarmatha;
+NoDisplay=true
+_Keywords=Preferences;Settings;

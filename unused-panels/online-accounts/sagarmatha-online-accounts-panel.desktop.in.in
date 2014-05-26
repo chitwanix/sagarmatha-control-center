@@ -1,0 +1,14 @@
+[Desktop Entry]
+_Name=Online Accounts
+_Comment=Manage online accounts
+Exec=sagarmatha-control-center online-accounts
+Icon=goa-panel
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;Settings;DesktopSettings;X-Sagarmatha-Settings-Panel;X-Sagarmatha-PersonalSettings;
+OnlyShowIn=GNOME;
+X-Sagarmatha-Settings-Panel=online-accounts
+# Translators: those are keywords for the online-accounts control-center panel
+_Keywords=Google;Facebook;Twitter;Yahoo;Web;Online;Chat;Calendar;Mail;Contact;
+NoDisplay=true

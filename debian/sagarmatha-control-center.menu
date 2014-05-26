@@ -1,0 +1,4 @@
+?package(sagarmatha-control-center):needs="X11" section="Applications/System/Administration" \
+  hints="Gnome" title="Sagarmatha Control Center" \
+  icon="/usr/share/pixmaps/sagarmatha-control-center.xpm" \
+  command="/usr/bin/sagarmatha-control-center"

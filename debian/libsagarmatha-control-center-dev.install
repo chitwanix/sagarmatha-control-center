@@ -1,0 +1,3 @@
+debian/tmp/usr/lib/pkgconfig
+debian/tmp/usr/include/sagarmatha-control-center-1
+debian/tmp/usr/lib/libsagarmatha-control-center.so

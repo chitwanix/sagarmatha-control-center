@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=Graphics Tablet
+_Comment=Set button mappings and adjust stylus sensitivity for graphics tablets
+Exec=sagarmatha-settings wacom
+Icon=cs-tablet
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;HardwareSettings;X-Sagarmatha-Settings-Panel;
+X-Sagarmatha-Settings-Panel=wacom
+OnlyShowIn=X-Sagarmatha;
+# Translators: those are keywords for the wacom tablet control-center panel
+_Keywords=Tablet;Wacom;Stylus;Eraser;Mouse;
