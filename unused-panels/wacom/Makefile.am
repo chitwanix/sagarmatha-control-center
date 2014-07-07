@@ -7,9 +7,9 @@ INCLUDES = 						\
 	$(PANEL_CFLAGS)					\
 	$(WACOM_PANEL_CFLAGS)				\
 	-I$(srcdir)/calibrator				\
-	-DCINNAMONLOCALEDIR="\"$(datadir)/locale\""	\
-	-DCINNAMONCC_DATA_DIR="\"$(pkgdatadir)\""		\
-	-DCINNAMONCC_UI_DIR="\"$(uidir)\""			\
+	-DSAGARMATHALOCALEDIR="\"$(datadir)/locale\""	\
+	-DSAGARMATHACC_DATA_DIR="\"$(pkgdatadir)\""		\
+	-DSAGARMATHACC_UI_DIR="\"$(uidir)\""			\
 	$(NULL)
 
 

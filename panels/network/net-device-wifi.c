@@ -2007,7 +2007,7 @@ net_device_wifi_init (NetDeviceWifi *device_wifi)
         device_wifi->priv->builder = gtk_builder_new ();
         gtk_builder_set_translation_domain (device_wifi->priv->builder, GETTEXT_PACKAGE);
         gtk_builder_add_from_file (device_wifi->priv->builder,
-                                   CINNAMONCC_UI_DIR "/network-wifi.ui",
+                                   SAGARMATHACC_UI_DIR "/network-wifi.ui",
                                    &error);
         if (error != NULL) {
                 g_warning ("Could not load interface file: %s", error->message);

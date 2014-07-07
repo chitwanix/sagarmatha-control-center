@@ -188,7 +188,7 @@ cc_mouse_panel_init (CcMousePanel *self)
   priv->builder = gtk_builder_new ();
 
   gtk_builder_add_from_file (priv->builder,
-                             CINNAMONCC_UI_DIR "/sagarmatha-mouse-properties.ui",
+                             SAGARMATHACC_UI_DIR "/sagarmatha-mouse-properties.ui",
                              &error);
   if (error != NULL)
     {
@@ -197,7 +197,7 @@ cc_mouse_panel_init (CcMousePanel *self)
     }
 
   gtk_builder_add_from_file (priv->builder,
-                             CINNAMONCC_UI_DIR "/sagarmatha-mouse-test.ui",
+                             SAGARMATHACC_UI_DIR "/sagarmatha-mouse-test.ui",
                              &error);
   if (error != NULL)
     {

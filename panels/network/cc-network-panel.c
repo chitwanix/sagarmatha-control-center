@@ -1158,7 +1158,7 @@ cc_network_panel_init (CcNetworkPanel *panel)
         panel->priv->builder = gtk_builder_new ();
         gtk_builder_set_translation_domain (panel->priv->builder, GETTEXT_PACKAGE);
         gtk_builder_add_from_file (panel->priv->builder,
-                                   CINNAMONCC_UI_DIR "/network.ui",
+                                   SAGARMATHACC_UI_DIR "/network.ui",
                                    &error);
         if (error != NULL) {
                 g_warning ("Could not load interface file: %s", error->message);

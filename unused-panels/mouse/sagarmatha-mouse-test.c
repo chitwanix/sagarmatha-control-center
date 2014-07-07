@@ -177,9 +177,9 @@ setup_scroll_image (GtkWidget *widget)
 	}
 
 	if (double_click_state == DOUBLE_CLICK_TEST_GEGL)
-		filename = CINNAMONCC_UI_DIR "/scroll-test-gegl.svg";
+		filename = SAGARMATHACC_UI_DIR "/scroll-test-gegl.svg";
 	else
-		filename = CINNAMONCC_UI_DIR "/scroll-test.svg";
+		filename = SAGARMATHACC_UI_DIR "/scroll-test.svg";
 	gtk_image_set_from_file (GTK_IMAGE (widget), filename);
 
 	if (double_click_state != DOUBLE_CLICK_TEST_GEGL)

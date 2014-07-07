@@ -1076,7 +1076,7 @@ cc_power_panel_init (CcPowerPanel *self)
   gtk_builder_set_translation_domain (self->priv->builder, GETTEXT_PACKAGE);
   error = NULL;
   gtk_builder_add_from_file (self->priv->builder,
-                             CINNAMONCC_UI_DIR "/power.ui",
+                             SAGARMATHACC_UI_DIR "/power.ui",
                              &error);
 
   if (error != NULL)

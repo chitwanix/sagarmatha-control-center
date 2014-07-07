@@ -4,9 +4,9 @@ INCLUDES = 						\
 	$(PANEL_CFLAGS)					\
 	$(NETWORK_PANEL_CFLAGS)				\
 	$(NETWORK_MANAGER_CFLAGS)			\
-	-DCINNAMONCC_UI_DIR="\"$(uidir)\""			\
+	-DSAGARMATHACC_UI_DIR="\"$(uidir)\""			\
 	-DLOCALE_DIR="\"$(datadir)/locale\""	\
-	-DCINNAMONCC_DATA_DIR="\"$(pkgdatadir)\""		\
+	-DSAGARMATHACC_DATA_DIR="\"$(pkgdatadir)\""		\
 	$(NULL)
 
 ccpanelsdir = $(PANELS_DIR)

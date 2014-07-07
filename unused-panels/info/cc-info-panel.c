@@ -1711,7 +1711,7 @@ info_panel_setup_overview (CcInfoPanel  *self)
     info_panel_setup_hostname (self, permission);
 
   widget = WID ("version_label");
-  text = g_strdup_printf (_("Version %s"), g_getenv ("CINNAMON_VERSION"));
+  text = g_strdup_printf (_("Version %s"), g_getenv ("SAGARMATHA_VERSION"));
   gtk_label_set_text (GTK_LABEL (widget), text);
   g_free (text);
 
@@ -1981,7 +1981,7 @@ cc_info_panel_init (CcInfoPanel *self)
     }
 
   gtk_builder_add_from_file (self->priv->builder,
-                             CINNAMONCC_UI_DIR "/info.ui",
+                             SAGARMATHACC_UI_DIR "/info.ui",
                              &error);
 
   if (error != NULL)

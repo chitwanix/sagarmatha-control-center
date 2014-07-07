@@ -2498,7 +2498,7 @@ cc_color_panel_init (CcColorPanel *prefs)
   gtk_builder_set_translation_domain (priv->builder, GETTEXT_PACKAGE);
 
   gtk_builder_add_from_file (priv->builder,
-                             CINNAMONCC_UI_DIR "/color.ui",
+                             SAGARMATHACC_UI_DIR "/color.ui",
                              &error);
 
   if (error != NULL)

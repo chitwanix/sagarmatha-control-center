@@ -5,9 +5,9 @@ SUBDIRS = icons
 INCLUDES = 						\
 	$(PANEL_CFLAGS)					\
 	$(POWER_PANEL_CFLAGS)				\
-	-DCINNAMONCC_UI_DIR="\"$(uidir)\""			\
+	-DSAGARMATHACC_UI_DIR="\"$(uidir)\""			\
 	-DLOCALE_DIR="\"$(datadir)/locale\""	\
-	-DCINNAMONCC_DATA_DIR="\"$(pkgdatadir)\""		\
+	-DSAGARMATHACC_DATA_DIR="\"$(pkgdatadir)\""		\
 	-I$(srcdir)/../../shell/			\
 	$(NULL)
 

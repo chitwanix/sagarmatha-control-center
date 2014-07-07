@@ -341,7 +341,7 @@ cc_wacom_panel_init (CcWacomPanel *self)
 	priv->builder = gtk_builder_new ();
 
 	gtk_builder_add_objects_from_file (priv->builder,
-					   CINNAMONCC_UI_DIR "/sagarmatha-wacom-properties.ui",
+					   SAGARMATHACC_UI_DIR "/sagarmatha-wacom-properties.ui",
 					   objects,
 					   &error);
 	if (error != NULL)

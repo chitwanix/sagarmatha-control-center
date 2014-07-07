@@ -18,35 +18,35 @@
  * Author: Thomas Wood <thos@gnome.org>
  */
 
-#ifndef _CINNAMON_CONTROL_CENTER_H
-#define _CINNAMON_CONTROL_CENTER_H
+#ifndef _SAGARMATHA_CONTROL_CENTER_H
+#define _SAGARMATHA_CONTROL_CENTER_H
 
 #include <glib-object.h>
 #include "cc-shell.h"
 
 G_BEGIN_DECLS
 
-#define CINNAMON_TYPE_CONTROL_CENTER sagarmatha_control_center_get_type()
+#define SAGARMATHA_TYPE_CONTROL_CENTER sagarmatha_control_center_get_type()
 
-#define CINNAMON_CONTROL_CENTER(obj) \
+#define SAGARMATHA_CONTROL_CENTER(obj) \
   (G_TYPE_CHECK_INSTANCE_CAST ((obj), \
-  CINNAMON_TYPE_CONTROL_CENTER, SagarmathaControlCenter))
+  SAGARMATHA_TYPE_CONTROL_CENTER, SagarmathaControlCenter))
 
-#define CINNAMON_CONTROL_CENTER_CLASS(klass) \
+#define SAGARMATHA_CONTROL_CENTER_CLASS(klass) \
   (G_TYPE_CHECK_CLASS_CAST ((klass), \
-  CINNAMON_TYPE_CONTROL_CENTER, SagarmathaControlCenterClass))
+  SAGARMATHA_TYPE_CONTROL_CENTER, SagarmathaControlCenterClass))
 
 #define GNOME_IS_CONTROL_CENTER(obj) \
   (G_TYPE_CHECK_INSTANCE_TYPE ((obj), \
-  CINNAMON_TYPE_CONTROL_CENTER))
+  SAGARMATHA_TYPE_CONTROL_CENTER))
 
 #define GNOME_IS_CONTROL_CENTER_CLASS(klass) \
   (G_TYPE_CHECK_CLASS_TYPE ((klass), \
-  CINNAMON_TYPE_CONTROL_CENTER))
+  SAGARMATHA_TYPE_CONTROL_CENTER))
 
-#define CINNAMON_CONTROL_CENTER_GET_CLASS(obj) \
+#define SAGARMATHA_CONTROL_CENTER_GET_CLASS(obj) \
   (G_TYPE_INSTANCE_GET_CLASS ((obj), \
-  CINNAMON_TYPE_CONTROL_CENTER, SagarmathaControlCenterClass))
+  SAGARMATHA_TYPE_CONTROL_CENTER, SagarmathaControlCenterClass))
 
 typedef struct _SagarmathaControlCenter SagarmathaControlCenter;
 typedef struct _SagarmathaControlCenterClass SagarmathaControlCenterClass;
@@ -76,4 +76,4 @@ void sagarmatha_control_center_set_overview_page (SagarmathaControlCenter *cente
 
 G_END_DECLS
 
-#endif /* _CINNAMON_CONTROL_CENTER_H */
+#endif /* _SAGARMATHA_CONTROL_CENTER_H */

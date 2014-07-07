@@ -3,9 +3,9 @@ cappletname = info
 INCLUDES = 						\
 	$(PANEL_CFLAGS)					\
 	$(INFO_PANEL_CFLAGS)				\
-	-DCINNAMONCC_UI_DIR="\"$(uidir)\""			\
-	-DCINNAMONLOCALEDIR="\"$(datadir)/locale\""	\
-	-DCINNAMONCC_DATA_DIR="\"$(pkgdatadir)\""		\
+	-DSAGARMATHACC_UI_DIR="\"$(uidir)\""			\
+	-DSAGARMATHALOCALEDIR="\"$(datadir)/locale\""	\
+	-DSAGARMATHACC_DATA_DIR="\"$(pkgdatadir)\""		\
 	-DDATADIR="\"$(datadir)\""			\
 	-DLIBEXECDIR="\"$(libexecdir)\""		\
 	$(NULL)

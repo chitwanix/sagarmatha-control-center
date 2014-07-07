@@ -107,7 +107,7 @@ cc_region_panel_init (CcRegionPanel * self)
 	priv->builder = gtk_builder_new ();
     gtk_builder_set_translation_domain (priv->builder, GETTEXT_PACKAGE);
 	gtk_builder_add_from_file (priv->builder,
-				   CINNAMONCC_UI_DIR "/sagarmatha-region-panel.ui",
+				   SAGARMATHACC_UI_DIR "/sagarmatha-region-panel.ui",
 				   &error);
 	if (error != NULL) {
 		g_warning ("Error loading UI file: %s", error->message);

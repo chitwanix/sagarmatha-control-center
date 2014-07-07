@@ -4,7 +4,7 @@ cappletname = wacom
 INCLUDES = 						\
 	$(PANEL_CFLAGS)					\
 	$(WACOM_PANEL_CFLAGS)				\
-	-DCINNAMONLOCALEDIR="\"$(datadir)/locale\""	\
+	-DSAGARMATHALOCALEDIR="\"$(datadir)/locale\""	\
 	$(NULL)
 
 

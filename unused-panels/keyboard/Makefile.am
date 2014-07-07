@@ -40,10 +40,10 @@ pkgconfigdir = $(datadir)/pkgconfig
 pkgconfig_DATA = sagarmatha-keybindings.pc
 
 INCLUDES = \
-	-DCINNAMONLOCALEDIR="\"$(datadir)/locale\"" \
-	-DCINNAMONCC_DATA_DIR="\"$(pkgdatadir)\"" \
-	-DCINNAMONCC_UI_DIR="\"$(uidir)\"" \
-	-DCINNAMONCC_KEYBINDINGS_DIR="\"$(pkgdatadir)/keybindings\""
+	-DSAGARMATHALOCALEDIR="\"$(datadir)/locale\"" \
+	-DSAGARMATHACC_DATA_DIR="\"$(pkgdatadir)\"" \
+	-DSAGARMATHACC_UI_DIR="\"$(uidir)\"" \
+	-DSAGARMATHACC_KEYBINDINGS_DIR="\"$(pkgdatadir)/keybindings\""
 
 CLEANFILES = \
 	$(Desktop_in_files) \

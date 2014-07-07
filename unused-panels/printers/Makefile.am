@@ -12,8 +12,8 @@ INCLUDES = 						\
 	$(PANEL_CFLAGS)					\
 	$(PRINTERS_PANEL_CFLAGS)			\
 	-I$(top_srcdir)/shell/				\
-	-DCINNAMONLOCALEDIR="\"$(datadir)/locale\""	\
-	-DCINNAMONCC_DATA_DIR="\"$(pkgdatadir)\""		\
+	-DSAGARMATHALOCALEDIR="\"$(datadir)/locale\""	\
+	-DSAGARMATHACC_DATA_DIR="\"$(pkgdatadir)\""		\
 	-DDATADIR="\"$(uidir)\""			\
 	$(NULL)
 

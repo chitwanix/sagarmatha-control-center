@@ -4,9 +4,9 @@ cappletname = wacom
 INCLUDES = 						\
 	$(PANEL_CFLAGS)					\
 	$(WACOM_PANEL_CFLAGS)				\
-	-DCINNAMONLOCALEDIR="\"$(datadir)/locale\""	\
-	-DCINNAMONCC_DATA_DIR="\"$(pkgdatadir)\""		\
-	-DCINNAMONCC_UI_DIR="\"$(uidir)\""			\
+	-DSAGARMATHALOCALEDIR="\"$(datadir)/locale\""	\
+	-DSAGARMATHACC_DATA_DIR="\"$(pkgdatadir)\""		\
+	-DSAGARMATHACC_UI_DIR="\"$(uidir)\""			\
 	-DPIXMAP_DIR=\""$(datadir)/sagarmatha-control-center/pixmaps"\"	\
 	$(NULL)
 

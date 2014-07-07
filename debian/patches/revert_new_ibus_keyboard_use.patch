@@ -660,7 +660,7 @@ diff -Nur --exclude Makefile.in sagarmatha-control-center-3.6.3/panels/keyboard/
 +  GError *error = NULL;
    GtkWidget *widget;
  
-+  const gchar *uifile = CINNAMONCC_UI_DIR "/sagarmatha-keyboard-panel.ui";
++  const gchar *uifile = SAGARMATHACC_UI_DIR "/sagarmatha-keyboard-panel.ui";
 +
    obj = G_OBJECT_CLASS (cc_keyboard_panel_parent_class)->constructor (gtype, n_properties, properties);
  
@@ -737,7 +737,7 @@ diff -Nur --exclude Makefile.in sagarmatha-control-center-3.6.3/panels/keyboard/
  static void
  cc_keyboard_panel_init (CcKeyboardPanel *self)
  {
--  const gchar *uifile = CINNAMONCC_UI_DIR "/sagarmatha-keyboard-panel.ui";
+-  const gchar *uifile = SAGARMATHACC_UI_DIR "/sagarmatha-keyboard-panel.ui";
 -  CcKeyboardPanelPrivate *priv;
 -  GError *error = NULL;
 -
@@ -3298,7 +3298,7 @@ diff -Nur --exclude Makefile.in sagarmatha-control-center-3.6.3/panels/region/sa
 -
 -  builder = gtk_builder_new ();
 -  gtk_builder_add_from_file (builder,
--                             CINNAMONCC_UI_DIR "/sagarmatha-region-panel-input-chooser.ui",
+-                             SAGARMATHACC_UI_DIR "/sagarmatha-region-panel-input-chooser.ui",
 -                             NULL);
 -  chooser = WID ("input_source_chooser");
 -  input_chooser = chooser;
@@ -5807,7 +5807,7 @@ diff -Nur --exclude Makefile.in sagarmatha-control-center-3.6.3/panels/region/sa
 +	GtkListStore *model;
 +	GtkTreeModelFilter *filtered_model;
 +
-+	gtk_builder_add_from_file (chooser_dialog, CINNAMONCC_UI_DIR
++	gtk_builder_add_from_file (chooser_dialog, SAGARMATHACC_UI_DIR
 +				   "/sagarmatha-region-panel-layout-chooser.ui",
 +				   NULL);
 +	chooser = CWID ("xkb_layout_chooser");
@@ -6843,7 +6843,7 @@ diff -Nur --exclude Makefile.in sagarmatha-control-center-3.6.3/panels/region/sa
 +	GtkWidget *chooser;
 +
 +	chooser_dialog = gtk_builder_new ();
-+	gtk_builder_add_from_file (chooser_dialog, CINNAMONCC_UI_DIR
++	gtk_builder_add_from_file (chooser_dialog, SAGARMATHACC_UI_DIR
 +				   "/sagarmatha-region-panel-options-dialog.ui",
 +				   NULL);
 +

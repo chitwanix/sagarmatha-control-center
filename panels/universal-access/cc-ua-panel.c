@@ -645,7 +645,7 @@ cc_ua_panel_init (CcUaPanel *self)
   priv->builder = gtk_builder_new ();
   gtk_builder_set_translation_domain (priv->builder, GETTEXT_PACKAGE);
   gtk_builder_add_objects_from_file (priv->builder,
-                                     CINNAMONCC_UI_DIR "/uap.ui",
+                                     SAGARMATHACC_UI_DIR "/uap.ui",
                                      objects,
                                      &err);
 

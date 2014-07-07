@@ -264,7 +264,7 @@ net_proxy_init (NetProxy *proxy)
         proxy->priv->builder = gtk_builder_new ();
         gtk_builder_set_translation_domain (proxy->priv->builder, GETTEXT_PACKAGE);
         gtk_builder_add_from_file (proxy->priv->builder,
-                                   CINNAMONCC_UI_DIR "/network-proxy.ui",
+                                   SAGARMATHACC_UI_DIR "/network-proxy.ui",
                                    &error);
         if (error != NULL) {
                 g_warning ("Could not load interface file: %s", error->message);

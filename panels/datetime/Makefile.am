@@ -110,8 +110,8 @@ dist_tzdata_DATA = backward
 AM_CPPFLAGS =						\
 	$(PANEL_CFLAGS)					\
 	$(DATETIME_PANEL_CFLAGS)			\
-	-DCINNAMONLOCALEDIR="\"$(datadir)/locale\""	\
-	-DCINNAMONCC_DATA_DIR="\"$(pkgdatadir)\""		\
+	-DSAGARMATHALOCALEDIR="\"$(datadir)/locale\""	\
+	-DSAGARMATHACC_DATA_DIR="\"$(pkgdatadir)\""		\
 	-DDATADIR="\"$(uidir)\""			\
 	$(NULL)
 

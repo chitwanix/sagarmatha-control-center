@@ -54,11 +54,11 @@ libsagarmatha_control_center_la_SOURCES =		\
 
 libsagarmatha_control_center_la_LDFLAGS =		\
 	-no-undefined				\
-	-version-info $(LIBCINNAMONCONTROLCENTER_CURRENT):$(LIBCINNAMONCONTROLCENTER_REVISION):$(LIBCINNAMONCONTROLCENTER_AGE) \
+	-version-info $(LIBSAGARMATHACONTROLCENTER_CURRENT):$(LIBSAGARMATHACONTROLCENTER_REVISION):$(LIBSAGARMATHACONTROLCENTER_AGE) \
 	$(NULL)
 
 libsagarmatha_control_center_la_LIBADD = 		\
-	$(LIBCINNAMON_CONTROL_CENTER_LIBS)		\
+	$(LIBSAGARMATHA_CONTROL_CENTER_LIBS)		\
 	$(NULL)
 
 libsagarmatha_control_center_la_LIBTOOLFLAGS = --tag=disable-static
@@ -69,7 +69,7 @@ pkgconfigdir=$(libdir)/pkgconfig
 pkgconfig_DATA=libsagarmatha-control-center.pc
 
 AM_CPPFLAGS =							\
-	-DCINNAMONLOCALEDIR="\"$(datadir)/locale\""		\
+	-DSAGARMATHALOCALEDIR="\"$(datadir)/locale\""		\
 	-DUIDIR="\"$(uidir)\""					\
 	-DMENUDIR="\"$(menudir)\""				\
 	-DPANELS_DIR="\"$(PANELS_DIR)\""

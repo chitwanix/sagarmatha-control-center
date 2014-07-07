@@ -14,8 +14,8 @@ dist_slideshowemblem_DATA = slideshow-emblem.svg
 INCLUDES =						\
 	$(PANEL_CFLAGS)					\
 	$(BACKGROUND_PANEL_CFLAGS)			\
-	-DCINNAMONLOCALEDIR="\"$(datadir)/locale\""	\
-	-DCINNAMONCC_DATA_DIR="\"$(pkgdatadir)\""		\
+	-DSAGARMATHALOCALEDIR="\"$(datadir)/locale\""	\
+	-DSAGARMATHACC_DATA_DIR="\"$(pkgdatadir)\""		\
 	-DUIDIR="\"$(uidir)\""				\
 	-DDATADIR="\"$(datadir)\""			\
 	-DGNOME_DESKTOP_USE_UNSTABLE_API		\

@@ -273,7 +273,7 @@ cc_screen_panel_init (CcScreenPanel *self)
   gtk_builder_set_translation_domain (self->priv->builder, GETTEXT_PACKAGE);
   error = NULL;
   gtk_builder_add_from_file (self->priv->builder,
-                             CINNAMONCC_UI_DIR "/screen.ui",
+                             SAGARMATHACC_UI_DIR "/screen.ui",
                              &error);
 
   if (error != NULL)

@@ -379,7 +379,7 @@ xkb_layout_choose (GtkBuilder * dialog)
 	GtkListStore *model;
 	GtkTreeModelFilter *filtered_model;
     gtk_builder_set_translation_domain (chooser_dialog, GETTEXT_PACKAGE);
-	gtk_builder_add_from_file (chooser_dialog, CINNAMONCC_UI_DIR
+	gtk_builder_add_from_file (chooser_dialog, SAGARMATHACC_UI_DIR
 				   "/sagarmatha-region-panel-layout-chooser.ui",
 				   NULL);
 	chooser = CWID ("xkb_layout_chooser");

@@ -7,7 +7,7 @@ INCLUDES = 						\
 	$(PANEL_CFLAGS)					\
 	$(WACOM_PANEL_CFLAGS)				\
 	-I$(srcdir)/calibrator				\
-	-DCINNAMONLOCALEDIR="\"$(datadir)/locale\""	\
+	-DSAGARMATHALOCALEDIR="\"$(datadir)/locale\""	\
 	$(NULL)
 
 ccpanelsdir = $(PANELS_DIR)

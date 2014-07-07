@@ -3,9 +3,9 @@ cappletname = universal-access
 INCLUDES = 						\
 	$(PANEL_CFLAGS)					\
 	$(UNIVERSAL_ACCESS_PANEL_CFLAGS)		\
-	-DCINNAMONCC_UI_DIR="\"$(uidir)\""			\
+	-DSAGARMATHACC_UI_DIR="\"$(uidir)\""			\
 	-DLOCALE_DIR="\"$(datadir)/locale\""	\
-	-DCINNAMONCC_DATA_DIR="\"$(pkgdatadir)\""		\
+	-DSAGARMATHACC_DATA_DIR="\"$(pkgdatadir)\""		\
 	-I$(top_srcdir)/panels/common/			\
 	$(NULL)
 

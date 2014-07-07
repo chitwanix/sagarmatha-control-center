@@ -41,7 +41,7 @@
 G_DEFINE_TYPE (SagarmathaControlCenter, sagarmatha_control_center, CC_TYPE_SHELL)
 
 #define CONTROL_CENTER_PRIVATE(o) \
-  (G_TYPE_INSTANCE_GET_PRIVATE ((o), CINNAMON_TYPE_CONTROL_CENTER, SagarmathaControlCenterPrivate))
+  (G_TYPE_INSTANCE_GET_PRIVATE ((o), SAGARMATHA_TYPE_CONTROL_CENTER, SagarmathaControlCenterPrivate))
 
 #define W(b,x) GTK_WIDGET (gtk_builder_get_object (b, x))
 
@@ -954,7 +954,7 @@ static void
 _shell_embed_widget_in_header (CcShell      *shell,
                                GtkWidget    *widget)
 {
-  SagarmathaControlCenterPrivate *priv = CINNAMON_CONTROL_CENTER (shell)->priv;
+  SagarmathaControlCenterPrivate *priv = SAGARMATHA_CONTROL_CENTER (shell)->priv;
   GtkBox *box;
 
   /* add to header */
@@ -975,7 +975,7 @@ _shell_set_active_panel_from_id (CcShell      *shell,
   gchar *name = NULL;
   gchar *desktop = NULL;
   GIcon *gicon = NULL;
-  SagarmathaControlCenterPrivate *priv = CINNAMON_CONTROL_CENTER (shell)->priv;
+  SagarmathaControlCenterPrivate *priv = SAGARMATHA_CONTROL_CENTER (shell)->priv;
   GtkWidget *old_panel;
 
   /* When loading the same panel again, just set the argv */
@@ -1039,7 +1039,7 @@ _shell_set_active_panel_from_id (CcShell      *shell,
     {
       g_warning ("Could not find settings panel \"%s\"", start_id);
     }
-  else if (activate_panel (CINNAMON_CONTROL_CENTER (shell), start_id, argv, desktop,
+  else if (activate_panel (SAGARMATHA_CONTROL_CENTER (shell), start_id, argv, desktop,
                            name, gicon) == FALSE)
     {
       /* Failed to activate the panel for some reason */
@@ -1065,7 +1065,7 @@ _shell_set_active_panel_from_id (CcShell      *shell,
 static GtkWidget *
 _shell_get_toplevel (CcShell *shell)
 {
-  return CINNAMON_CONTROL_CENTER (shell)->priv->window;
+  return SAGARMATHA_CONTROL_CENTER (shell)->priv->window;
 }
 
 /* GObject Implementation */
@@ -1098,7 +1098,7 @@ sagarmatha_control_center_set_property (GObject      *object,
 static void
 sagarmatha_control_center_dispose (GObject *object)
 {
-  SagarmathaControlCenterPrivate *priv = CINNAMON_CONTROL_CENTER (object)->priv;
+  SagarmathaControlCenterPrivate *priv = SAGARMATHA_CONTROL_CENTER (object)->priv;
 
   g_free (priv->current_panel_id);
 
@@ -1143,7 +1143,7 @@ sagarmatha_control_center_dispose (GObject *object)
 static void
 sagarmatha_control_center_finalize (GObject *object)
 {
-  SagarmathaControlCenterPrivate *priv = CINNAMON_CONTROL_CENTER (object)->priv;
+  SagarmathaControlCenterPrivate *priv = SAGARMATHA_CONTROL_CENTER (object)->priv;
 
   if (priv->filter_string)
     {
@@ -1429,7 +1429,7 @@ sagarmatha_control_center_init (SagarmathaControlCenter *self)
 SagarmathaControlCenter *
 sagarmatha_control_center_new (void)
 {
-  return g_object_new (CINNAMON_TYPE_CONTROL_CENTER, NULL);
+  return g_object_new (SAGARMATHA_TYPE_CONTROL_CENTER, NULL);
 }
 
 void
